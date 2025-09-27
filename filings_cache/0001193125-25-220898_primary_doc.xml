@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?><edgarSubmission xmlns="http://www.sec.gov/edgar/schedule13D" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>SCHEDULE 13D</submissionType>
+    <filerInfo>
+      <filer>
+        <filerCredentials>
+          <cik>0002010692</cik>
+          <ccc>XXXXXXXX</ccc>
+        </filerCredentials>
+      </filer>
+      <liveTestFlag>LIVE</liveTestFlag>
+
+
+
+    </filerInfo>
+  </headerData>
+  <formData>
+    <coverPageHeader>
+      <securitiesClassTitle>Ordinary Shares</securitiesClassTitle>
+      <dateOfEvent>09/26/2025</dateOfEvent>
+      <previouslyFiledFlag>true</previouslyFiledFlag>
+      <issuerInfo>
+        <issuerCIK>0001962738</issuerCIK>
+        <issuerCUSIP>G1933S101</issuerCUSIP>
+        <issuerName>CASI Pharmaceuticals, Inc.</issuerName>
+        <address>
+          <street1 xmlns="http://www.sec.gov/edgar/common">1701-1702, China Central Office Tower 1</street1>
+          <street2 xmlns="http://www.sec.gov/edgar/common">No. 81 Jianguo Road, Chaoyang District</street2>
+          <city xmlns="http://www.sec.gov/edgar/common">Beijing</city>
+          <stateOrCountry xmlns="http://www.sec.gov/edgar/common">F4</stateOrCountry>
+          <zipCode xmlns="http://www.sec.gov/edgar/common">100025</zipCode>
+        </address>
+      </issuerInfo>
+      <authorizedPersons>
+        <notificationInfo>
+          <personName>James Huang</personName>
+          <personPhoneNum>(86-21) 6176-1101</personPhoneNum>
+          <personAddress>
+            <street1 xmlns="http://www.sec.gov/edgar/common">Panacea Venture, No. 5, Lane 1350</street1>
+            <street2 xmlns="http://www.sec.gov/edgar/common">Fuxing Middle Road, Xuhui District</street2>
+            <city xmlns="http://www.sec.gov/edgar/common">Shanghai</city>
+            <stateOrCountry xmlns="http://www.sec.gov/edgar/common">F4</stateOrCountry>
+            <zipCode xmlns="http://www.sec.gov/edgar/common">200031</zipCode>
+          </personAddress>
+        </notificationInfo>
+      </authorizedPersons>
+    </coverPageHeader>
+    <reportingPersons>
+      <reportingPersonInfo>
+        <reportingPersonCIK>0001869939</reportingPersonCIK>
+        <reportingPersonNoCIK>N</reportingPersonNoCIK>
+        <reportingPersonName>Panacea Venture Healthcare Fund II, L.P.</reportingPersonName>
+        <fundType>OO</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>E9</citizenshipOrOrganization>
+        <soleVotingPower>0</soleVotingPower>
+        <sharedVotingPower>3550000</sharedVotingPower>
+        <soleDispositivePower>0</soleDispositivePower>
+        <sharedDispositivePower>3550000</sharedDispositivePower>
+        <aggregateAmountOwned>3550000</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>19.4</percentOfClass>
+        <typeOfReportingPerson>PN</typeOfReportingPerson>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonNoCIK>Y</reportingPersonNoCIK>
+        <reportingPersonName>Panacea Venture Healthcare Fund II GP Company, Ltd.</reportingPersonName>
+        <fundType>OO</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>E9</citizenshipOrOrganization>
+        <soleVotingPower>0</soleVotingPower>
+        <sharedVotingPower>3550000</sharedVotingPower>
+        <soleDispositivePower>0</soleDispositivePower>
+        <sharedDispositivePower>3550000</sharedDispositivePower>
+        <aggregateAmountOwned>3550000</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>19.4</percentOfClass>
+        <typeOfReportingPerson>CO</typeOfReportingPerson>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonCIK>0002010692</reportingPersonCIK>
+        <reportingPersonNoCIK>N</reportingPersonNoCIK>
+        <reportingPersonName>Panacea Innovation Limited</reportingPersonName>
+        <fundType>OO</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>E9</citizenshipOrOrganization>
+        <soleVotingPower>0</soleVotingPower>
+        <sharedVotingPower>3550000</sharedVotingPower>
+        <soleDispositivePower>0</soleDispositivePower>
+        <sharedDispositivePower>3550000</sharedDispositivePower>
+        <aggregateAmountOwned>3550000</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>19.4</percentOfClass>
+        <typeOfReportingPerson>CO</typeOfReportingPerson>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonCIK>0001573160</reportingPersonCIK>
+        <reportingPersonNoCIK>N</reportingPersonNoCIK>
+        <reportingPersonName>James Huang</reportingPersonName>
+        <fundType>OO</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>F4</citizenshipOrOrganization>
+        <soleVotingPower>111571</soleVotingPower>
+        <sharedVotingPower>3550000</sharedVotingPower>
+        <soleDispositivePower>111571</soleDispositivePower>
+        <sharedDispositivePower>3550000</sharedDispositivePower>
+        <aggregateAmountOwned>3661571</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>19.9</percentOfClass>
+        <typeOfReportingPerson>IN</typeOfReportingPerson>
+      </reportingPersonInfo>
+    </reportingPersons>
+    <items1To7>
+      <item1>
+        <securityTitle>Ordinary Shares</securityTitle>
+        <issuerName>CASI Pharmaceuticals, Inc.</issuerName>
+        <issuerPrincipalAddress>
+          <street1 xmlns="http://www.sec.gov/edgar/common">1701-1702, China Central Office Tower 1</street1>
+          <street2 xmlns="http://www.sec.gov/edgar/common">No. 81 Jianguo Road, Chaoyang District</street2>
+          <city xmlns="http://www.sec.gov/edgar/common">Beijing</city>
+          <stateOrCountry xmlns="http://www.sec.gov/edgar/common">F4</stateOrCountry>
+          <zipCode xmlns="http://www.sec.gov/edgar/common">100025</zipCode>
+        </issuerPrincipalAddress>
+      </item1>
+      <item2>
+        <filingPersonName>The Schedule 13D is being filed by the following persons (each a "Reporting Person" and, collectively, the "Reporting Persons"):
+
+            Panacea Venture Healthcare Fund II, L.P.
+
+            Panacea Venture Healthcare Fund II GP Company, Ltd.
+
+            Panacea Innovation Limited
+
+            James Huang</filingPersonName>
+        <principalBusinessAddress>The business address of each of the Reporting Persons is c/o Maples Corporate Services Limited, Ugland House, Grand Cayman KY1-1104, Cayman Islands.</principalBusinessAddress>
+        <principalJob>The Reporting Persons are principally engaged in the business of investing in securities, including of the Issuer.</principalJob>
+        <hasBeenConvicted>During the last five years, none of the Reporting Persons has been convicted in any criminal proceeding (excluding traffic violations or similar misdemeanors).</hasBeenConvicted>
+        <convictionDescription>During the last five years, none of the Reporting Persons were a party to a civil proceeding of a judicial or administrative body of competent jurisdiction and as a result of such proceeding was or is subject to a judgment, decree or final order enjoining future violations of, or prohibiting or mandating activities subject to, federal or state securities laws or finding any violation with respect to such laws.</convictionDescription>
+        <citizenship>Mr. Huang is a citizen of the Republic of China. The remaining Reporting Persons are organized under the laws of the Cayman Islands.</citizenship>
+      </item2>
+      <item3>
+        <fundsSource>Panacea Venture Healthcare Fund II, L.P. purchased 3,550,000 Ordinary Shares for aggregate consideration of approximately $6.7 million. Mr. Huang received options to purchase 111,571 Ordinary Shares in connection with his previous service as a director of the Issuer. Panacea Venture Healthcare Fund II, L.P. obtained the funds used to purchase the Ordinary Shares through capital contributions from its partners.</fundsSource>
+      </item3>
+      <item4>
+        <transactionPurpose>On September 26, 2025, the Issuer announced that James Huang will be appointed to the Board of Directors (the "Board") of the Issuer, effective October 1, 2025.
+
+General
+
+The Reporting Persons acquired the securities described in this Schedule 13D for investment purposes and intend to review their investments in the Issuer on a continuing basis. Any actions the Reporting Persons might undertake may be made at any time and from time to time without prior notice and will be dependent upon the Reporting Persons' review of numerous factors, including, but not limited to: an ongoing evaluation of the Issuer's business, financial condition, operations and prospects; price levels of the Issuer's securities; general market, industry and economic conditions; the relative attractiveness of alternative business and investment opportunities; and other future developments.
+
+The Reporting Persons may acquire additional securities of the Issuer, or retain or sell all or a portion of the securities then held, in the open market or in privately negotiated transactions. In addition, the Reporting Persons may engage in discussions with management, the Board, and securityholders of the Issuer and other relevant parties or encourage, cause or seek to cause the Issuer or such persons to consider or explore extraordinary corporate transactions, such as: a merger, reorganization or take-private transaction that could result in the de-listing or de-registration of the Ordinary Shares; sales or acquisitions of assets or businesses; changes to the capitalization or dividend policy of the Issuer; or other material changes to the Issuer's business or corporate structure, including changes in management or the composition of the Board. To facilitate their consideration of such matters, the Reporting Persons may retain consultants and advisors and may enter into discussions with potential sources of capital and other third parties. The Reporting Persons may exchange information with any such persons pursuant to appropriate confidentiality or similar agreements. The Reporting Persons will likely take some or all of the foregoing steps at preliminary stages in their consideration of various possible courses of action before forming any intention to pursue any particular plan or direction.
+
+Other than as described above, the Reporting Persons do not currently have any plans or proposals that relate to, or would result in, any of the matters listed in Items 4(a)-(j) of Schedule 13D, although, depending on the factors discussed herein, the Reporting Persons may change their purpose or formulate different plans or proposals with respect thereto at any time</transactionPurpose>
+      </item4>
+      <item5>
+        <percentageOfClassSecurities>The information contained on the cover pages is incorporated by reference into this Item 5.
+
+The ownership information presented herein represents beneficial ownership of Ordinary Shares as of the date of this filing, based upon 18,292,612 Ordinary Shares outstanding as disclosed by the Issuer.
+
+Panacea Venture Healthcare Fund II, L.P. is the record holder of 3,550,000 Ordinary Shares.
+
+James Huang is the sole owner of Panacea Innovation Limited, which is the sole owner of Panacea Venture Healthcare Fund II GP Company, Ltd., which is the general partner of Panacea Venture Healthcare Fund II, L.P. As a result, each of the Reporting Persons may be deemed to share beneficial ownership of the Ordinary Shares held of record by Panacea Venture Healthcare Fund II, L.P., but each disclaims such beneficial ownership.
+
+In addition, Mr. Huang holds options to purchase 111,571 Ordinary Shares that are currently exercisable.</percentageOfClassSecurities>
+        <numberOfShares>The information contained on the cover pages is incorporated by reference into this Item 5.</numberOfShares>
+        <transactionDesc>On September 26, 2025, Panacea Venture Healthcare Fund II, L.P. purchased 1,500,000 Ordinary Shares from the Issuer at a price of $1.5350 per Ordinary Share. Except for the transactions disclosed in this Item 5(c), none of the Reporting Persons has effected any transactions in the Ordinary Shares during the past sixty days.</transactionDesc>
+        <listOfShareholders>None.</listOfShareholders>
+        <date5PercentOwnership>Not applicable.</date5PercentOwnership>
+      </item5>
+      <item6>
+        <contractDescription>Except for the transactions described herein, none of the Reporting Persons has any contracts, arrangements, understandings or relationships (legal or otherwise) with any person with respect to any securities of the Issuer, including but not limited to any contracts, arrangements, understandings or relationships concerning the transfer or voting of such securities, finder's fees, joint ventures, loan or option arrangements, puts or calls, guarantees of profits, division of profits or losses, or the giving or withholding of proxies.</contractDescription>
+      </item6>
+      <item7>
+        <filedExhibits>Exhibit 1. Joint Filing Agreement.</filedExhibits>
+      </item7>
+    </items1To7>
+    <signatureInfo>
+      <signaturePerson>
+        <signatureReportingPerson>Panacea Venture Healthcare Fund II, L.P.</signatureReportingPerson>
+        <signatureDetails>
+          <signature>By: Panacea Venture Healthcare Fund II GP Company, Ltd., its general partner, By: Panacea Innovation Limited, its sole owner, /s/ James Huang</signature>
+          <title>James Huang, Founding Managing Partner</title>
+          <date>09/26/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Panacea Venture Healthcare Fund II GP Company, Ltd.</signatureReportingPerson>
+        <signatureDetails>
+          <signature>By: Panacea Innovation Limited, its sole owner, /s/ James Huang</signature>
+          <title>James Huang, Founding Managing Partner</title>
+          <date>09/26/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Panacea Innovation Limited</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ James Huang</signature>
+          <title>James Huang, Founding Managing Partner</title>
+          <date>09/26/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>James Huang</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ James Huang</signature>
+          <title>James Huang</title>
+          <date>09/26/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+    </signatureInfo>
+  </formData>
+
+</edgarSubmission>

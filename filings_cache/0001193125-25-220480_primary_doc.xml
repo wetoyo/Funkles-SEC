@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?><edgarSubmission xmlns="http://www.sec.gov/edgar/schedule13D" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>SCHEDULE 13D</submissionType>
+    <filerInfo>
+      <filer>
+        <filerCredentials>
+          <cik>0001820190</cik>
+          <ccc>XXXXXXXX</ccc>
+        </filerCredentials>
+      </filer>
+      <liveTestFlag>LIVE</liveTestFlag>
+
+
+
+    </filerInfo>
+  </headerData>
+  <formData>
+    <coverPageHeader>
+      <securitiesClassTitle>Common Stock, par value $0.0001</securitiesClassTitle>
+      <dateOfEvent>09/22/2025</dateOfEvent>
+      <previouslyFiledFlag>false</previouslyFiledFlag>
+      <issuerInfo>
+        <issuerCIK>0001584541</issuerCIK>
+        <issuerCUSIP>81686G113</issuerCUSIP>
+        <issuerName>Semnur Pharmaceuticals, Inc.</issuerName>
+        <address>
+          <street1 xmlns="http://www.sec.gov/edgar/common">960 San Antonio Road</street1>
+          <city xmlns="http://www.sec.gov/edgar/common">Palo Alto</city>
+          <stateOrCountry xmlns="http://www.sec.gov/edgar/common">CA</stateOrCountry>
+          <zipCode xmlns="http://www.sec.gov/edgar/common">94303</zipCode>
+        </address>
+      </issuerInfo>
+      <authorizedPersons>
+        <notificationInfo>
+          <personName>Henry Ji</personName>
+          <personPhoneNum>(650) 516-4310</personPhoneNum>
+          <personAddress>
+            <street1 xmlns="http://www.sec.gov/edgar/common">Chief Executive Officer and President</street1>
+            <street2 xmlns="http://www.sec.gov/edgar/common">Scilex Holding Co., 960 San Antonio Rd</street2>
+            <city xmlns="http://www.sec.gov/edgar/common">Palo Alto</city>
+            <stateOrCountry xmlns="http://www.sec.gov/edgar/common">CA</stateOrCountry>
+            <zipCode xmlns="http://www.sec.gov/edgar/common">94303</zipCode>
+          </personAddress>
+        </notificationInfo>
+      </authorizedPersons>
+    </coverPageHeader>
+    <reportingPersons>
+      <reportingPersonInfo>
+        <reportingPersonCIK>0001820190</reportingPersonCIK>
+        <reportingPersonNoCIK>N</reportingPersonNoCIK>
+        <reportingPersonName>Scilex Holding Company</reportingPersonName>
+        <memberOfGroup>b</memberOfGroup>
+        <fundType>OO</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>DE</citizenshipOrOrganization>
+        <soleVotingPower>500000</soleVotingPower>
+        <sharedVotingPower>188054849</sharedVotingPower>
+        <soleDispositivePower>500000</soleDispositivePower>
+        <sharedDispositivePower>188054849</sharedDispositivePower>
+        <aggregateAmountOwned>188554849</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>79.89</percentOfClass>
+        <typeOfReportingPerson>HC</typeOfReportingPerson>
+        <commentContent>Note to Rows 7 and 9: Comprised of the following shares of common stock, par value $0.0001 per share ("Common Stock"), of Semnur Pharmaceuticals, Inc. (f/k/a Denali Capital Acquisition Corp.) (the "Issuer"): (i) 542,361 shares issued pursuant to the Business Combination (as defined below) upon the exchange of 5,423,606 shares of Series A Preferred Stock of Old Semnur (as defined below), (ii) 500,000 shares purchased by SHC (as defined below) prior to the Business Combination, and (iii) 12,488 shares issued upon conversion of the SHC Convertible Promissory Note (as defined below) upon the consummation of the Business Combination. Subsequent to the consummation of the Business Combination, SHC transferred 554,849 shares of the Issuer's Common Stock to a third party. The beneficial ownership reported in these rows does not reflect the 5,423,606 shares of Series A Preferred Stock, par value $0.0001 per share, of the Issuer ("Series A Preferred Stock") held by SHC, representing 100% of the outstanding shares of Series A Preferred Stock, which are entitled to vote, together with the holders of Common Stock, and not separately as a class, on an as converted to Common Stock basis on all matters on which the holders of shares of Common Stock have the right to vote (with the number of votes being determined by dividing the stated value (as determined under the Issuer's Certificate of Designations of Series A Preferred Stock, filed with the Delaware Secretary of State on September 22, 2025 (the "Certificate of Designations")) by $10.00) because such shares of Series A Preferred Stock are not convertible into Common Stock.
+
+Note to Rows 8 and 10: Comprised of (i) 181,804,849 shares of Common Stock held by Scilex, Inc., a wholly owned subsidiary of Scilex Holding Company ("SHC") and (ii) 6,250,000 shares of Common Stock held by Scilex Bio, Inc., a majority owned subsidiary of SHC, each of which entities share voting and dispositive power over the shares held by it with SHC.
+
+Note to Row 11: Comprised of the shares of Common Stock referenced in Rows 7 through 10.
+
+Note to Row 13: Percent of class beneficially owned is calculated based on 236,021,088 shares of Common Stock outstanding as of September 25, 2025.  The aggregate voting power of the shares of Common Stock beneficially owned by SHC and referenced in rows 7 through 10 together with 5,423,606 shares of Series A Preferred Stock held by SHC represent 80.34% of total voting power of the Issuer based on 236,021,088 shares of Common Stock and 5,423,606 shares of Series A Preferred Stock outstanding as of September 25, 2025.</commentContent>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonCIK>0002084647</reportingPersonCIK>
+        <reportingPersonNoCIK>N</reportingPersonNoCIK>
+        <reportingPersonName>Scilex, Inc.</reportingPersonName>
+        <memberOfGroup>b</memberOfGroup>
+        <fundType>OO</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>DE</citizenshipOrOrganization>
+        <soleVotingPower>0</soleVotingPower>
+        <sharedVotingPower>181804849</sharedVotingPower>
+        <soleDispositivePower>0</soleDispositivePower>
+        <sharedDispositivePower>181804849</sharedDispositivePower>
+        <aggregateAmountOwned>181804849</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>77.03</percentOfClass>
+        <typeOfReportingPerson>CO</typeOfReportingPerson>
+        <commentContent>Note to Rows 8 and 10: Comprised of 181,804,849 shares of Common Stock held by Scilex, Inc., a wholly owned subsidiary of SHC, with which it shares voting and dispositive power over these shares.
+
+Note to Row 13: Percent of class beneficially owned is calculated based on 236,021,088 shares of Common Stock outstanding as of September 25, 2025. </commentContent>
+      </reportingPersonInfo>
+    </reportingPersons>
+    <items1To7>
+      <item1>
+        <securityTitle>Common Stock, par value $0.0001</securityTitle>
+        <issuerName>Semnur Pharmaceuticals, Inc.</issuerName>
+        <issuerPrincipalAddress>
+          <street1 xmlns="http://www.sec.gov/edgar/common">960 San Antonio Road</street1>
+          <city xmlns="http://www.sec.gov/edgar/common">Palo Alto</city>
+          <stateOrCountry xmlns="http://www.sec.gov/edgar/common">CA</stateOrCountry>
+          <zipCode xmlns="http://www.sec.gov/edgar/common">94303</zipCode>
+        </issuerPrincipalAddress>
+      </item1>
+      <item2>
+        <filingPersonName>This Schedule 13D is being filed by Scilex Holding Company, a Delaware corporation ("SHC"), and Scilex, Inc., a Delaware corporation and wholly owned subsidiary of SHC ("Scilex, Inc." and, together with SHC, the "Reporting Persons").
+
+This Schedule 13D relates to the Common Stock, $0.0001 par value per share, of the Issuer (the "Common Stock") held directly and/or indirectly by SHC, Scilex, Inc. and Scilex Bio, Inc., a Delaware corporation and majority owned subsidiary of SHC ("Scilex Bio"). Scilex Bio holds less than five percent of the total shares of Common Stock outstanding.
+
+The agreement among the Reporting Persons relating to the joint filing of this Schedule 13D is attached as Exhibit 1 hereto.
+
+The information required by General Instruction C to Schedule 13D is attached hereto as Exhibit 2 and is hereby incorporated by reference.
+</filingPersonName>
+        <principalBusinessAddress>The principal business address of each Reporting Person is 960 San Antonio Road, Palo Alto, CA 94303.</principalBusinessAddress>
+        <principalJob>The information required by General Instruction C to Schedule 13D is attached hereto as Exhibit 2 and is hereby incorporated by reference.</principalJob>
+        <hasBeenConvicted>During the last five years, none of the Reporting Persons nor, to the knowledge of the Reporting Persons, without independent verification, any of the persons listed in Exhibit 2 has been convicted in any criminal proceeding (excluding traffic violations or similar misdemeanors).</hasBeenConvicted>
+        <convictionDescription>During the last five years, none of the Reporting Persons nor, to the knowledge of the Reporting Persons, without independent verification, any of the persons listed in Exhibit 2 was a party to a civil proceeding of a judicial or administrative body of competent jurisdiction and as a result of such proceeding was or is subject to a judgment, decree or final order enjoining future violations of, or prohibiting or mandating activities subject to, federal or state securities laws or finding any violation with respect to such laws.</convictionDescription>
+        <citizenship>The response to Item 2(a) of this Schedule 13D is incorporated by reference herein.</citizenship>
+      </item2>
+      <item3>
+        <fundsSource>
+The Issuer is a majority owned subsidiary of the Reporting Persons.
+
+Merger Agreement
+
+On September 22, 2025 (the "Closing Date"), the Issuer consummated a business combination (the "Business Combination") pursuant to the terms of that certain Agreement and Plan of Merger, dated as of August 30, 2024, by and among Denali Capital Acquisition Corp. ("SPAC"), Denali Merger Sub, Inc. ("Merger Sub"), and Semnur Pharmaceuticals, Inc. (n/k/a Semnur, Inc.) ("Old Semnur") (as amended by Amendment No. 1 on April 16, 2025 and Amendment No. 2 on July 22, 2025, the "Merger Agreement").
+
+Immediately upon the consummation of the Business Combination (the "Effective Time") and the other transactions contemplated by the Merger Agreement (the "Transactions"), Old Semnur merged with and into Merger Sub, after which the separate corporate existence of Old Semnur ceased and Merger Sub continued as the surviving company and wholly owned subsidiary of Denali Capital Acquisition Corp., which changed its name to Semnur Pharmaceuticals, Inc.
+
+Prior to the Transactions, until April 17, 2025, Old Semnur was a wholly owned, indirect subsidiary of SHC with all of the outstanding stock of Old Semnur held directly by Scilex, Inc.
+
+On April 17, 2025, the Reporting Persons contributed 5,000,000 shares of common stock of Old Semnur to Scilex Bio in exchange for 60% ownership of Scilex Bio. Pursuant to the Merger Agreement, at the time of the Business Combination, the 5,000,000 shares of common stock of Old Semnur held by Scilex Bio were converted into the right to receive 6,250,000 shares of Common Stock based on the exchange ratio of 1.25 to 1 as determined pursuant to the terms of the Merger Agreement. SHC has shared dispositive and voting power over these shares as a result of its 60% ownership of Scilex Bio. As a result of the Transactions, on the Closing Date, the remaining 155,000,000 shares of common stock of Old Semnur previously held by Scilex, Inc. were converted into the right to receive 193,750,000 shares of Common Stock of the Issuer based on the exchange ratio of 1.25 to 1 as determined pursuant to the terms of the Merger Agreement.
+
+The foregoing description of the Merger Agreement and the transactions contemplated thereby is qualified in its entirety by reference to the full text of the Merger Agreement, Amendment No. 1 and Amendment No. 2, copies of which are included as Exhibits 3, 4 and 5, respectively, to this Schedule 13D and incorporated herein by reference.
+
+Debt Exchange Agreement
+
+On August 30, 2024, Old Semnur entered into a Contribution and Satisfaction of Indebtedness Agreement with SHC (the "Debt Exchange Agreement"). The Debt Exchange Agreement provides that SHC shall contribute to Semnur all amounts (including accrued interest thereon, if any) for certain loans and other amounts provided by SHC to Old Semnur that remain outstanding as of immediately prior to the closing of the Business Combination (the "Aggregate Outstanding Amount" or "Outstanding Indebtedness"), in exchange for the issuance by Old Semnur to SHC of Series A Preferred Stock of Old Semnur, and upon the occurrence of such exchange, the Aggregate Outstanding Amount and the Outstanding Indebtedness (as such terms are defined the Debt Exchange Agreement) shall be satisfied in full.
+
+Pursuant to the terms of the Debt Exchange Agreement, effective as of immediately prior to the closing of the Business Combination, SHC has elected to contribute the Outstanding Indebtedness to Old Semnur in exchange for the issuance by Old Semnur to SHC of that number of shares of Series A Preferred Stock of Old Semnur that is equal to (i) the Aggregate Outstanding Amount plus the amount that is equal to 10% of the Aggregate Outstanding Amount divided by (ii) $11.00 (rounded up to the nearest whole share); provided, that in no event shall the Aggregate Outstanding Amount exceed $60,000,000.
+
+Immediately prior to the closing of the Business Combination the Aggregate Outstanding Amount of debt was equal to $54,236,058.00. The aggregate number of shares of Series A Preferred Stock of Old Semnur issued to SHC prior to the Effective Time pursuant to the Debt Exchange Agreement was 5,423,606 shares. At the Effective Time such shares were exchanged for 5,423,606 shares of Series A Preferred Stock of the Issuer and 542,361 shares of Common Stock of the Issuer.
+
+The foregoing description of the Debt Exchange Agreement and the transactions contemplated thereby is qualified in its entirety by reference to the full text of the Debt Exchange Agreement, a copy of which is included as Exhibit 6 to this Schedule 13D and incorporated herein by reference.
+
+Convertible Note
+
+On August 9, 2024, SPAC issued a convertible promissory note in the total principal amount of up to $180,000 to SHC (the "SHC Convertible Promissory Note"). The SHC Convertible Promissory Note was issued with an initial principal balance of $15,037, with the remaining $164,963 drawable at SPAC's request and upon the consent of SHC prior to the maturity of the SHC Convertible Promissory Note. The SHC Convertible Promissory Note matured upon the consummation of the Business Combination, with $124,883.82 outstanding as of such time. Upon consummation of the Business Combination, the SHC Convertible Promissory Note was converted into 12,488 shares of Common Stock.
+
+The foregoing description of the SHC Convertible Promissory Note and the transactions contemplated thereby is qualified in its entirety by reference to the full text of the SHC Convertible Promissory Note, a copy of which is included as Exhibit 7 to this Schedule 13D and incorporated herein by reference.
+
+Sponsor Interest Purchase Agreement
+
+On August 30, 2024, SPAC and SHC entered into a sponsor interest purchase agreement (the "Sponsor Interest Purchase Agreement"), pursuant to which SHC purchased 500,000 SPAC Class B Ordinary Shares (the "Purchased Interests"), that were then-held by the sponsor of SPAC. The aggregate consideration for the purchase and sale of the Purchased Interests is as follows: (i) $2,000,000 (the "Cash Consideration") and (ii) 300,000 shares of common stock, par value $0.0001 per share, of SHC (the "Scilex Shares"). The Scilex Shares were payable upon consummation of the Business Combination. On September 22, 2025, prior to the closing of the Business Combination, Scilex entered into the Satisfaction and Discharge Agreement (the "S&amp;D Agreement") with Denali and the sponsor of SPAC, pursuant to which, among other things, the sponsor of SPAC agreed to accept a cash payment in the amount of $213,932.16 in lieu of the Scilex Shares. The Purchased Interests converted automatically, on a one-for-one basis, into shares of Issuer Common Stock at the effective time of the domestication of SPAC pursuant to the terms of the Merger Agreement.
+
+The foregoing description of the Sponsor Interest Purchase Agreement and the S&amp;D Agreement and the transactions contemplated thereby is qualified in its entirety by reference to the full text of the Sponsor Interest Purchase Agreement and the S&amp;D Agreement, copies of which are included as Exhibits 8 and 9, respectively, to this Schedule 13D and incorporated herein by reference.</fundsSource>
+      </item3>
+      <item4>
+        <transactionPurpose>The information set forth in Item 3 is incorporated herein by reference.
+
+Subsequent to the consummation of the Business Combination, SHC transferred 554,849 shares of the Issuer's Common Stock and Scilex, Inc. transferred 11,945,151 shares of the Issuer's Common Stock to a third party.</transactionPurpose>
+      </item4>
+      <item5>
+        <percentageOfClassSecurities>The information set forth in Item 3 is incorporated herein by reference.
+
+Each of the Reporting Persons is deemed to be the beneficial owner of 181,804,849 shares of Common Stock held directly by Scilex, Inc. Additionally, SHC is deemed to be the beneficial owner of an additional 6,750,000 shares of Common Stock comprised of: (i) 500,000 shares of Common Stock held by SHC and (ii) 6,250,000 shares of Common Stock held by Scilex Bio. </percentageOfClassSecurities>
+        <numberOfShares>The information contained in rows 7 through 10 on the cover page of this Schedule 13D for each Reporting Person is incorporated herein by reference in its entirety.</numberOfShares>
+        <transactionDesc>Upon consummation of the Business Combination, Scilex, Inc. received 193,750,000 shares of the Issuer's Common Stock and Scilex Bio received 6,250,000 shares of the Issuer's Common Stock based on the exchange ratio provided in the Merger Agreement. Upon the consummation of the Business Combination, SHC directly held 1,054,849 shares of the Issuer's Common Stock, comprised of: (i) 500,000 shares of Common Stock that SHC purchased prior to the Business Combination, (ii) 542,361 shares of Common Stock issued in connection with the Business Combination in exchange for SHC's shares of Series A Preferred Stock of Old Semnur (as part of such preferred stock exchange SHC was also issued 5,423,606 shares of Series A Preferred Stock of the Issuer), and (iii) 12,488 shares of Common Stock issued upon conversion of the SHC Convertible Promissory Note previously issued by SPAC to SHC. On September 23, 2025, SHC and Scilex, Inc. transferred an aggregate of 12,500,000 shares (comprised of 554,849 shares held by SHC and 11,945,151 shares held by Scilex, Inc.) of the Issuer's Common Stock to a third party.</transactionDesc>
+        <listOfShareholders>Not applicable.</listOfShareholders>
+        <date5PercentOwnership>Not applicable.</date5PercentOwnership>
+      </item5>
+      <item6>
+        <contractDescription>
+The information set forth in Items 2 and 3 is incorporated herein by reference.
+
+Amended and Restated Registration Rights Agreement
+
+Pursuant to the Merger Agreement, at the closing of the Business Combination, SPAC, SHC, Jiandong "Peter" Xu, FutureTech Capital LLC, and SPAC's directors and officers, Huifeng Chang, Lei Huang, Jim Mao, You "Patrick" Sun and Kevin Vassily, entered into the Registration Rights Agreement, which, among other things, governs the registration of certain shares of Issuer Common Stock for resale, and includes certain customary demand and "piggy-back" registration rights with respect to shares of Issuer Common Stock held by the parties thereto.
+
+The foregoing description of the Registration Rights Agreement and the transactions contemplated thereby is qualified in its entirety by reference to the full text of the Registration Rights Agreement, a copy of which is included as Exhibit 10 to this Schedule 13D and incorporated herein by reference.
+
+Stockholder Agreement
+
+On August 30, 2024, SHC entered into the Stockholder Agreement with SPAC (the "Stockholder Agreement").
+
+Pursuant to the terms of the Stockholder Agreement, from and after the Effective Time, and for so long as SHC beneficially owns any shares of Issuer Series A Preferred Stock, among other things, (i) SHC shall have the right, but not the obligation, to designate a stockholder designee or stockholder designees, regardless of (a) whether such stockholder designee is to be elected to the Issuer Board of Directors ("Issuer Board") at a meeting of stockholders called for the purpose of electing directors (or by consent in lieu of meeting) or appointed by the Issuer Board in order to fill any vacancy created by the departure of any director or increase in the authorized number of members of the Issuer Board or (b) the size of the Issuer Board and (ii) Issuer will be required to take all actions reasonably necessary, and not otherwise prohibited by applicable law, to cause each stockholder designee to be so nominated, elected or appointed to the Issuer Board as more fully described in the Stockholder Agreement. SHC will also have the right to designate a replacement director for any stockholder designee that has been removed from the Issuer Board and the right to appoint a representative of SHC to attend all meetings of the committees of the Issuer Board.
+
+The Stockholder Agreement also provides that Issuer shall not, and shall cause its subsidiaries not to, among others, without the prior written consent of SHC: (i) amend, alter, modify or repeal (whether by merger, consolidation, by operation of law or otherwise) any provisions of the Charter (including the Issuer Certificate of Designations) or the Bylaws that increase or decrease the authorized number of directors constituting the Issuer Board; (ii) take any action that would have the effect of increasing or decreasing the number of directors constituting the Issuer Board; (iii) amend, alter, modify or repeal (whether by merger, consolidation, reclassification, by operation of law or otherwise) any provisions of the respective charters (and any related organizational documents) of any of the committees of the Issuer Board; (iv) file any voluntary petition under any applicable federal or state bankruptcy or insolvency law on behalf of Issuer or any of its subsidiaries; (v) (A) incur or permit any of Issuer's subsidiaries to incur any indebtedness in an aggregate principal amount in excess of $10,000,000) (with "principal amount" for purposes of this definition to include undrawn committed or available amounts) or (B) enter into, modify, amend or renew (or permit any of its subsidiaries to enter into, modify, amend or renew) any contract or other agreement in respect of indebtedness in an aggregate principal amount in excess of $10,000,000 (with "principal amount" for purposes of this definition to include undrawn committed or available amounts); (vi) consummate or otherwise enter into any other contract or agreement to effect any change of control, joint venture or corporate reorganization by Issuer or any of its subsidiaries; (vii) declare or pay any dividend or distribution on Issuer Common Stock, other junior security or parity security; or (viii) purchase, redeem or otherwise acquire for consideration by Issuer, directly or indirectly, any Issuer Common Stock, other junior security or parity security (except as necessary to effect (A) a reclassification of any junior security for or into other junior securities, (B) a reclassification of any parity security for or into other parity securities with the same or lesser aggregate liquidation preference, (C) a reclassification of any parity security into a junior security, (D) the exchange or conversion of any junior security for or into another junior security, (E) the exchange or conversion of any parity security for or into another parity security with the same or lesser per share liquidation amount, (F) the exchange or conversion of any parity security for or into any junior security or (G) the settlement of incentive equity awards (including any applicable withholdings and the net exercise of options) in accordance with the terms thereof).
+
+The Stockholder Agreement will terminate and be of no further force and effect upon the earlier of (i) mutual written agreement of the parties thereto and (ii) the date upon which SHC (together with its affiliates, subsidiaries, successors and assigns (other than the Issuer and its subsidiaries)) ceases to own any shares of Issuer Series A Preferred Stock.
+
+The foregoing description of the Stockholder Agreement and the transactions contemplated thereby is qualified in its entirety by reference to the full text of the Stockholder Agreement, a copy of which is included as Exhibit 11 to this Schedule 13D and incorporated herein by reference.
+
+Semnur Securities Purchase Agreement
+
+On September 23, 2025, SHC, Scilex, Inc., (together with SHC, the "Scilex Sellers") and, solely with respect to certain registration rights described below, the Issuer, entered into a Securities Purchase Agreement ("Biconomy Resale SPA") with Biconomy PTE.LTD ("Biconomy").
+
+Pursuant to the Biconomy Resale SPA, the Scilex Sellers agreed to sell, and Biconomy agreed to purchase, an aggregate of 12,500,000 shares (the "Biconomy Resale SPA Shares") of the Issuer's Common Stock, comprised of: (i) 554,849 shares of Common Stock held by SHC and (ii) 11,945,151 shares of Common Stock held by Scilex, Inc. The Biconomy Resale SPA Shares are being sold for a purchase price of $16.00 per share (the "Purchase Price"), payable in Bitcoin blockchain ("Bitcoin"), with such amount of Bitcoin equal to the quotient of (A) Biconomy's aggregate Purchase Price divided by (B) the spot exchange rate for Bitcoin as published by Coinbase.com at 8:00 p.m. (New York City time) on the trading day immediately prior to the closing date of the purchase.
+
+The foregoing summary of the Biconomy Resale SPA does not purport to be complete and is qualified in its entirety by reference to the full text of the Biconomy Resale SPA, a copy of which is included as Exhibit 12 to this Schedule 13D and is incorporated herein by reference.
+
+Except as set forth herein, the Reporting Persons have no contracts, arrangements, understandings or relationships (legal or otherwise) with respect to any securities of the Issuer, including any class of the Issuer's securities used as a reference security, in connection with any of the following: call options, put options, security-based swaps or any other derivative securities, transfer or voting of any of the securities, finder's fees, joint ventures, loan or option arrangements, guarantees of profits, division of profits or loss, or the giving or withholding of proxies.</contractDescription>
+      </item6>
+      <item7>
+        <filedExhibits>
+Exhibit 1 - Joint Filing Agreement.
+
+Exhibit 2 - Executive Officers and Board of Directors of Scilex Holding Company and Executive Officers and Board of Directors of Scilex, Inc.
+
+Exhibit 3 - Agreement and Plan of Merger, dated as of August 30, 2024, by and among SPAC, Merger Sub, and Old Semnur (incorporated by reference to Exhibit 2.3 to SPAC's Registration Statement on Form S-4 (File No. 333-283019) filed with the SEC on August 12, 2025).
+
+Exhibit 4 - Amendment No. 1 to Agreement and Plan of Merger, dated as of April 16, 2025, by and among SPAC, Merger Sub, and Old Semnur (incorporated by reference to Exhibit 2.4 to SPAC's Registration Statement on Form S-4 (File No. 333-283019) filed with the SEC on August 12, 2025).
+
+Exhibit 5 - Amendment No. 2 to Agreement and Plan of Merger, dated as of July 22, 2025, by and among SPAC, Merger Sub, and Old Semnur (incorporated by reference to Exhibit 2.5 to SPAC's Registration Statement on Form S-4 (File No. 333-283019) filed with the SEC on August 12, 2025).
+
+Exhibit 6 - Contribution and Satisfaction of Indebtedness Agreement, dated as of August 30, 2024, by and between Scilex Holding Company and Semnur Pharmaceuticals, Inc. (incorporated by reference to Exhibit 10.17 to SPAC's Registration Statement on Form S-4 (File No. 333-283019) filed with the SEC on August 12, 2025).
+
+Exhibit 7 - Convertible Promissory Note, dated as of August 9, 2024, by and between Denali Capital Acquisition Corp. and Scilex Holding Company (incorporated by reference to Exhibit 10.1 to Denali's Current Report on Form 8-K filed with the SEC on August 9, 2024).
+
+Exhibit 8 - Sponsor Interest Purchase Agreement, dated as of August 30, 2024, by and between Denali Capital Global Investments LLC and Scilex Holding Company (incorporated by reference to Exhibit 10.3 to Denali's Current Report on Form 8-K filed with the SEC on September 5, 2024).
+
+Exhibit 9 - Satisfaction and Discharge of Indebtedness Agreement, dated as of September 22, 2025, by and among Denali Capital Acquisition Corp.,  Denali Capital Global Investments LLC, and Scilex Holding Company (incorporated by reference to Exhibit 10.9 to the Issuer's Current Report on Form 8-K filed with the SEC on September 26, 2025).
+
+Exhibit 10 - Amended and Restated Registration Rights Agreement, by and among Semnur Pharmaceuticals, Inc., Scilex Holding Company and certain security holders (incorporated by reference to Exhibit 10.2 to the Issuer's Current Report on Form 8-K filed with the SEC on September 26, 2025).
+
+Exhibit 11 - Stockholder Agreement, dated as of August 30, 2024, by and between Denali Capital Acquisition Corp. and Scilex Holding Company (incorporated by reference to Exhibit 10.4 to Denali's Current Report on Form 8-K filed with the SEC on September 5, 2024).
+
+Exhibit 12 - Securities Purchase Agreement, dated September 23, 2025, by and among Scilex Holding Company, Scilex, Inc., Semnur Pharmaceuticals and Biconomy PTE.LTD (incorporated by reference to Exhibit 10.1 to SHC's Current Report on Form 8-K filed with the SEC on September 26, 2025).</filedExhibits>
+      </item7>
+    </items1To7>
+    <signatureInfo>
+      <signaturePerson>
+        <signatureReportingPerson>Scilex Holding Company</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Henry Ji</signature>
+          <title>Henry Ji, Chief Executive Officer and President</title>
+          <date>09/26/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Scilex, Inc.</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Henry Ji</signature>
+          <title>Henry Ji, Chief Executive Officer</title>
+          <date>09/26/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+    </signatureInfo>
+  </formData>
+
+</edgarSubmission>
