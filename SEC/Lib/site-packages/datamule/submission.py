@@ -1,0 +1,372 @@
+from pathlib import Path
+import json
+from .document.document import Document
+from secsgml import parse_sgml_content_into_memory
+from secsgml.parse_sgml import transform_metadata_string
+from secsgml.utils import bytes_to_str
+from .sec.utils import headers
+import tarfile
+import zstandard as zstd
+import gzip
+import urllib.request
+from secxbrl import parse_inline_xbrl
+from company_fundamentals import construct_fundamentals
+from decimal import Decimal
+from .utils.format_accession import format_accession
+
+
+class Submission:
+    def __init__(self, path=None, sgml_content=None, keep_document_types=None,
+                 batch_tar_path=None, accession_prefix=None, portfolio_ref=None,url=None):
+        
+
+        # declare vars to be filled later
+        self._xbrl = None
+        self._fundamentals_cache = {}
+        
+        # Validate parameters
+        param_count = sum(x is not None for x in [path, sgml_content, batch_tar_path,url])
+        if param_count != 1:
+            raise ValueError("Exactly one of path, sgml_content, or batch_tar_path must be provided")
+        
+        if batch_tar_path is not None and (accession_prefix is None or portfolio_ref is None):
+            raise ValueError("batch_tar_path requires both accession_prefix and portfolio_ref")
+        
+        # Initialize batch tar attributes
+        self.batch_tar_path = batch_tar_path
+        self.accession_prefix = accession_prefix
+        self.portfolio_ref = portfolio_ref
+        
+        if url is not None or sgml_content is not None:
+            if url is not None:
+                request = urllib.request.Request(url, headers=headers)
+                response = urllib.request.urlopen(request)
+
+                if response.getcode() == 200:
+                    sgml_content=response.read()
+                else:
+                    raise ValueError(f"URL: {url}, Error: {response.getcode()}")
+
+            self.path = None
+            metadata, raw_documents = parse_sgml_content_into_memory(sgml_content)
+            metadata = bytes_to_str(metadata)
+
+            # standardize metadata
+            metadata = transform_metadata_string(metadata)
+
+            self.metadata = Document(type='submission_metadata', content=metadata, extension='.json',filing_date=None,accession=None,path=None)
+            # code dupe
+            self.accession = self.metadata.content['accession-number']
+            self.filing_date= f"{self.metadata.content['filing-date'][:4]}-{self.metadata.content['filing-date'][4:6]}-{self.metadata.content['filing-date'][6:8]}"
+    
+            self.documents = []
+            filtered_metadata_documents = []
+
+            for idx,doc in enumerate(self.metadata.content['documents']):
+                type = doc.get('type')
+                
+                # Keep only specified types
+                if keep_document_types is not None and type not in keep_document_types:
+                    continue
+
+                # write as txt if not declared
+                filename = doc.get('filename','.txt')
+                extension = Path(filename).suffix
+                self.documents.append(Document(type=type, content=raw_documents[idx], extension=extension,filing_date=self.filing_date,accession=self.accession))
+
+                filtered_metadata_documents.append(doc)
+            
+            self.metadata.content['documents'] = filtered_metadata_documents
+
+        elif batch_tar_path is not None:
+            # Batch tar case
+            self.path = None
+            
+            # Load metadata from batch tar
+            with self.portfolio_ref.batch_tar_locks[batch_tar_path]:
+                tar_handle = self.portfolio_ref.batch_tar_handles[batch_tar_path]
+                metadata_obj = tar_handle.extractfile(f'{accession_prefix}/metadata.json')
+                metadata = json.loads(metadata_obj.read().decode('utf-8'))
+
+            # Set metadata path using :: notation
+            metadata_path = f"{batch_tar_path}::{accession_prefix}/metadata.json"
+            
+            # standardize metadata
+            metadata = transform_metadata_string(metadata)
+            self.metadata = Document(type='submission_metadata', content=metadata, extension='.json',filing_date=None,accession=None,path=metadata_path)
+
+            # lets just use accesion-prefix, to get around malformed metadata files (1995 has a lot!)
+            self.accession = format_accession(self.accession_prefix,'dash')
+            
+            #print(f"s: {self.metadata.content['accession-number']} : {batch_tar_path}")
+            self.filing_date= f"{self.metadata.content['filing-date'][:4]}-{self.metadata.content['filing-date'][4:6]}-{self.metadata.content['filing-date'][6:8]}"
+
+        elif path is not None:
+            self.path = Path(path)  
+            if self.path.suffix == '.tar':
+                with tarfile.open(self.path,'r') as tar:
+                    metadata_obj = tar.extractfile('metadata.json')
+                    metadata = json.loads(metadata_obj.read().decode('utf-8'))
+
+                # tarpath
+                metadata_path = f"{self.path}::metadata.json"
+            else:
+                metadata_path = self.path / 'metadata.json'
+                with metadata_path.open('r') as f:
+                    metadata = json.load(f) 
+
+            # standardize metadata
+            metadata = transform_metadata_string(metadata)
+            self.metadata = Document(type='submission_metadata', content=metadata, extension='.json',filing_date=None,accession=None,path=metadata_path)
+            self.accession = self.metadata.content['accession-number']
+            self.filing_date= f"{self.metadata.content['filing-date'][:4]}-{self.metadata.content['filing-date'][4:6]}-{self.metadata.content['filing-date'][6:8]}"
+
+
+        # booleans
+        self._has_xbrl = any(
+                doc['type'] in ('EX-100.INS', 'EX-101.INS') or 
+                doc.get('filename', '').endswith('_htm.xml')
+                for doc in self.metadata.content['documents']
+            )
+        
+        self._has_fundamentals = self._has_xbrl
+        
+    def _load_document_by_index(self, idx):
+        """Load a document by its index in the metadata documents list."""
+        doc = self.metadata.content['documents'][idx]
+        
+        # If loaded from sgml_content, return pre-loaded document
+        if self.path is None and self.batch_tar_path is None:
+            return self.documents[idx]
+        
+        # Get filename from metadata - this is the source of truth
+        filename = doc.get('filename')
+        if filename is None:
+            filename = doc['sequence'] + '.txt'
+
+        # Get the base extension (before any compression extension)
+        # If filename ends with .gz or .zst, the real extension is before that
+        if filename.endswith('.gz'):
+            extension = Path(filename[:-3]).suffix
+            is_compressed = 'gzip'
+        elif filename.endswith('.zst'):
+            extension = Path(filename[:-4]).suffix
+            is_compressed = 'zstd'
+        else:
+            extension = Path(filename).suffix
+            is_compressed = False
+
+        # Handle batch tar case
+        if self.batch_tar_path is not None:
+            with self.portfolio_ref.batch_tar_locks[self.batch_tar_path]:
+                tar_handle = self.portfolio_ref.batch_tar_handles[self.batch_tar_path]
+                
+                # Use exact filename from metadata
+                tar_path = f'{self.accession_prefix}/{filename}'
+                content = tar_handle.extractfile(tar_path).read()
+    
+                
+                # Decompress if needed based on filename extension
+                if is_compressed == 'gzip':
+                    content = gzip.decompress(content)
+                elif is_compressed == 'zstd':
+                    content = zstd.ZstdDecompressor().decompress(content)
+                
+                # Decode text files
+                # if extension in ['.htm', '.html', '.txt', '.xml']:
+                #     content = content.decode('utf-8', errors='replace')
+                
+                document_path = f"{self.batch_tar_path}::{self.accession_prefix}/{filename}"
+        
+        # Handle regular path case
+        else:
+            # Check if path is a tar file (old format)
+            if self.path.suffix == '.tar':
+                with tarfile.open(self.path, 'r') as tar:
+                    # Try to extract the file, handling compression
+                    try:
+                        content = tar.extractfile(filename).read()
+                        actual_filename = filename
+                    except:
+                        try:
+                            content = tar.extractfile(filename + '.gz').read()
+                            actual_filename = filename + '.gz'
+                            is_compressed = 'gzip'
+                        except:
+                            try:
+                                content = tar.extractfile(filename + '.zst').read()
+                                actual_filename = filename + '.zst'
+                                is_compressed = 'zstd'
+                            except:
+                                raise FileNotFoundError(f"Document file not found in tar: {filename}")
+                    
+                    # Decompress if compressed
+                    if is_compressed == 'gzip':
+                        content = gzip.decompress(content)
+                    elif is_compressed == 'zstd':
+                        content = zstd.ZstdDecompressor().decompress(content)
+                    
+                    # Decode text files
+                    # if extension in ['.htm', '.html', '.txt', '.xml']:
+                    #     content = content.decode('utf-8', errors='replace')
+                    
+                    document_path = f"{self.path}::{actual_filename}"
+            
+            else:
+                # Regular directory case
+                document_path = self.path / filename
+                
+                if not document_path.exists():
+                    raise FileNotFoundError(f"Document file not found: {document_path}")
+                
+                with document_path.open('rb') as f:
+                    content = f.read()
+                
+                # Decompress if needed based on filename extension
+                if is_compressed == 'gzip':
+                    content = gzip.decompress(content)
+                elif is_compressed == 'zstd':
+                    content = zstd.ZstdDecompressor().decompress(content)
+                
+                # Decode text files
+                # if extension in ['.htm', '.html', '.txt', '.xml']:
+                #     content = content.decode('utf-8', errors='replace')
+
+        return Document(
+            type=doc['type'], 
+            content=content, 
+            extension=extension,
+            filing_date=self.filing_date,
+            accession=self.accession,
+            path=document_path
+        )
+    def __iter__(self):
+        """Make Submission iterable by yielding all documents."""
+        for idx in range(len(self.metadata.content['documents'])):
+            yield self._load_document_by_index(idx)
+
+    def document_type(self, document_type):
+        """Yield documents matching the specified type(s)."""
+        # Convert single document type to list for consistent handling
+        if isinstance(document_type, str):
+            document_types = [document_type]
+        else:
+            document_types = [item for item in document_type]
+
+        for idx, doc in enumerate(self.metadata.content['documents']):
+            if doc['type'] in document_types:
+                yield self._load_document_by_index(idx)
+
+    def parse_xbrl(self):
+        if self._xbrl:
+            return
+
+        for idx, doc in enumerate(self.metadata.content['documents']):
+            if doc['type'] in ['EX-100.INS','EX-101.INS']:
+                document = self._load_document_by_index(idx)
+                self._xbrl = parse_inline_xbrl(content=document.content,file_type='extracted_inline')
+                return
+
+            if doc['filename'].endswith('_htm.xml'):
+                document = self._load_document_by_index(idx)
+                self._xbrl = parse_inline_xbrl(content=document.content,file_type='extracted_inline')
+                return
+
+    @property
+    def xbrl(self):
+        if self._xbrl is None:
+            self.parse_xbrl()
+        return self._xbrl
+        
+    def parse_fundamentals(self, categories=None):
+        # Create cache key based on categories
+        categories_key = tuple(sorted(categories)) if categories else 'all'
+        
+        # Return cached result if available
+        if categories_key in self._fundamentals_cache:
+            return self._fundamentals_cache[categories_key]
+        
+        # Use the property to trigger XBRL parsing if needed
+        xbrl_data = self.xbrl
+
+        # if no xbrl return None
+        if not xbrl_data:
+            self._fundamentals_cache[categories_key] = None
+            return None
+            
+        # Transform XBRL records into the format needed by construct_fundamentals
+        xbrl = []
+        
+        for xbrl_record in xbrl_data:
+            try:
+                # Extract basic fields
+                value = xbrl_record.get('_val', None)
+                
+                taxonomy, name = xbrl_record['_attributes']['name'].split(':')
+                
+
+                # Handle scaling if present
+                if xbrl_record.get('_attributes', {}).get('scale') is not None:
+                    scale = int(xbrl_record['_attributes']['scale'])
+                    try:
+                        value = str(Decimal(value.replace(',', '')) * (Decimal(10) ** scale))
+                    except:
+                        pass
+                
+
+                # Extract period dates
+                period_start_date = None
+                period_end_date = None
+                
+                if xbrl_record.get('_context'):
+                    context = xbrl_record['_context']
+                    period_start_date = context.get('period_instant') or context.get('period_startdate')
+                    period_end_date = context.get('period_enddate')
+                
+                # Create record in the format expected by construct_fundamentals
+                record = {
+                    'taxonomy': taxonomy,
+                    'name': name,
+                    'value': value,
+                    'period_start_date': period_start_date,
+                    'period_end_date': period_end_date
+                }
+                
+                xbrl.append(record)
+                
+            except Exception as e:
+                # Skip malformed records
+                continue
+        
+  
+        # Call construct_fundamentals with the transformed data
+        fundamentals = construct_fundamentals(xbrl, 
+                            taxonomy_key='taxonomy', 
+                            concept_key='name', 
+                            start_date_key='period_start_date', 
+                            end_date_key='period_end_date',
+                            categories=categories)
+        
+        # Cache the result
+        self._fundamentals_cache[categories_key] = fundamentals
+        return fundamentals
+
+    @property
+    def fundamentals(self):
+        """Get all fundamental data"""
+        return self.parse_fundamentals(categories=None)
+
+    def __getattr__(self, name):
+        # Check if it's a fundamentals property request
+        if name.endswith('_fundamentals'):
+            category = name.replace('_fundamentals', '')
+            return self.parse_fundamentals(categories=[category])
+        
+        # For any other unknown attribute, try it as a fundamentals category
+        # Let parse_fundamentals handle whether it's valid or not
+        result = self.parse_fundamentals(categories=[name])
+        if result is not None:
+            return result
+        
+        # Only raise AttributeError if parse_fundamentals returns None/empty
+        raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")

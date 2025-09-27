@@ -1,0 +1,8 @@
+{
+	"form_types": [
+		"SCHEDULE 13D",
+        "10-K"
+	],
+    "form_type_index": 0,
+	"date_range_days": 1
+}
