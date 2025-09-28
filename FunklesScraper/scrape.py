@@ -127,4 +127,4 @@ def scrape(form_type, days):
                 except Exception as e:
                     print(f"Error cleaning up {file}: {e}")
 
-    return f'Scrape Successful. {len(result_count)} saved to filing cache, {files_removed} old files removed.'
+    return f'Scrape Successful. {result_count} saved to filing cache, {files_removed} old files removed.'
