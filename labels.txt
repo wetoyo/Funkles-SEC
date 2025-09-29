@@ -7,4 +7,6 @@ Intention to sell or dispose of large share block
 Disclosure of voting or investment power
 Compliance with SEC ownership disclosure rules
 Reporting changes in ownership or voting rights
+Signal activist investment or strategic involvementInvestor acquires >5% of a company’s shares
+Investor acquires >5% of a company’s shares
 Signal activist investment or strategic involvement

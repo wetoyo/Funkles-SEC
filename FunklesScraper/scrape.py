@@ -25,7 +25,7 @@ def scrape(form_type, days):
 
     try:
         results = index.search_submissions(
-            filing_date=(yesterday, today),
+            filing_date=(cacherange, today),
             submission_type=form_type,
             requests_per_second=3
         )
@@ -76,13 +76,29 @@ def scrape(form_type, days):
                 print(f"Failed to parse XML {safe_filename}: {e}")
                 continue
 
+            # Extract issuer (company of interest)
+            issuer_name = None
+            try:
+                issuer_elem = root.find(".//edgar:issuerName", ns)
+                if issuer_elem is not None and issuer_elem.text:
+                    issuer_name = issuer_elem.text.strip()
+            except Exception as e:
+                print(f"Failed to extract issuer from {safe_filename}: {e}")
+
+            # Extract reporting persons (parties of interest)
+            reporting_persons = []
+            try:
+                for rp in root.findall(".//edgar:reportingPersonName", ns):
+                    if rp is not None and rp.text:
+                        reporting_persons.append(rp.text.strip())
+            except Exception as e:
+                print(f"Failed to extract reporting persons from {safe_filename}: {e}")
+
+            # Extract shares + percent
             share_amount = None
-            share_pct = None
             for info in root.findall(".//edgar:reportingPersonInfo", ns):
                 agg = info.find("edgar:aggregateAmountOwned", ns)
-                percent = info.find("edgar:percentOfClass", ns)
                 share_amount = float(agg.text) if agg is not None else None
-                share_pct = float(percent.text) if percent is not None else None
 
             oustanding_shares = get_outstanding_shares(cik)
 
@@ -93,7 +109,8 @@ def scrape(form_type, days):
                 "form": result["_source"].get("form"),
                 "file_type": result["_source"].get("file_type"),
                 "original_filename": filename,
-                "accession": accession,
+                "issuer": issuer_name,
+                "reporting_persons": reporting_persons,
                 "cik": cik,
                 "label": None,
                 "summary": None,
@@ -127,4 +144,4 @@ def scrape(form_type, days):
                 except Exception as e:
                     print(f"Error cleaning up {file}: {e}")
 
-    return f'Scrape Successful. {len(result_count)} saved to filing cache, {files_removed} old files removed.'
+    return f'Scrape Successful. {result_count} saved to filing cache, {files_removed} old files removed.'
