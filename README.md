@@ -10,7 +10,7 @@ Tool to scrape and analyze SEC filings.
 
 ## Installation
 
-```bash
+```
 git clone https://github.com/wetoyo/Funkles-SEC.git
 cd Funkles-SEC
 pip install -r requirements.txt
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 - Additionally, get a Gemini API key to use, and place in a .env file in the repo folder.
 ```bash
-GEMINI_API_KEY=yourkeyhere
+GEMINI_API_KEY=your_gemini_api_key
 ```
 
 ### Launching the UI
@@ -28,3 +28,7 @@ To start the Funkles-SEC user interface, run:
 ```bash
 python app.py
 ```
+## License 
+
+
+MIT License
