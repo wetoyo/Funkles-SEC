@@ -115,12 +115,14 @@ class Labeler:
                         content = f.read()
 
                     label = self.generate_label(content)
+                    print(f"Generated label: {label} for {meta['filename']}")
                     if label not in self.labels:
                         self.labels.add(label)
-                        with open(self.label_file, "a") as f:
+                        with open(LABEL_PATH, "a") as f:
                             f.write(label + "\n")
 
                     meta["label"] = label
                     meta["summary"] = self.generate_summary(content)
+                    print(f"Generated summary for {meta['filename']}")
                     with open(meta_path, "w") as f:
                         json.dump(meta, f, indent=4)

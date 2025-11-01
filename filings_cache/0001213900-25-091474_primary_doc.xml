@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><edgarSubmission xmlns="http://www.sec.gov/edgar/schedule13D" xmlns:com="http://www.sec.gov/edgar/common">
+  <headerData>
+    <submissionType>SCHEDULE 13D</submissionType>
+    <filerInfo>
+      <filer>
+        <filerCredentials>
+          <!-- Field: Pseudo-Tag; ID: Name; Data: Pontifax Management 4 G.P. (2015) Ltd. -->
+          <cik>0001726334</cik>
+          <ccc>XXXXXXXX</ccc>
+        </filerCredentials>
+      </filer>
+      <liveTestFlag>LIVE</liveTestFlag>
+
+
+
+    </filerInfo>
+  </headerData>
+  <formData>
+    <coverPageHeader>
+      <securitiesClassTitle>Common Stock, $0.0001 par value per share</securitiesClassTitle>
+      <dateOfEvent>09/12/2025</dateOfEvent>
+      <previouslyFiledFlag>false</previouslyFiledFlag>
+      <issuerInfo>
+        <issuerCIK>0001691082</issuerCIK>
+        <issuerCUSIP>50180M108</issuerCUSIP>
+        <issuerName>LB Pharmaceuticals Inc</issuerName>
+        <address>
+          <com:street1>One Pennsylvania Plaza,</com:street1>
+          <com:street2>Suite 1025</com:street2>
+          <com:city>New York</com:city>
+          <com:stateOrCountry>NY</com:stateOrCountry>
+          <com:zipCode>10119</com:zipCode>
+        </address>
+      </issuerInfo>
+      <authorizedPersons>
+        <notificationInfo>
+          <personName>Asaf Shinar</personName>
+          <personPhoneNum>972-9-9725617</personPhoneNum>
+          <personAddress>
+            <com:street1>Pontifax</com:street1>
+            <com:street2>14 Shenkar Street</com:street2>
+            <com:city>Herzliya Pituach</com:city>
+            <com:stateOrCountry>L3</com:stateOrCountry>
+            <com:zipCode>46140</com:zipCode>
+          </personAddress>
+        </notificationInfo>
+      </authorizedPersons>
+    </coverPageHeader>
+    <reportingPersons>
+      <reportingPersonInfo>
+        <reportingPersonCIK>0001726334</reportingPersonCIK>
+        <reportingPersonNoCIK>N</reportingPersonNoCIK>
+        <reportingPersonName>Pontifax Management 4 G.P. (2015) Ltd.</reportingPersonName>
+        <memberOfGroup>b</memberOfGroup>
+        <fundType>AF</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>L3</citizenshipOrOrganization>
+        <soleVotingPower>0.00</soleVotingPower>
+        <sharedVotingPower>1411681.00</sharedVotingPower>
+        <soleDispositivePower>0.00</soleDispositivePower>
+        <sharedDispositivePower>1411681.00</sharedDispositivePower>
+        <aggregateAmountOwned>1411681.00</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>6.3</percentOfClass>
+        <typeOfReportingPerson>CO</typeOfReportingPerson>
+        <commentContent>1. Includes (i) 898,201 Ordinary Shares held by Pontifax (Israel) VI Limited Partnership and (ii) 513,480 Ordinary Shares held by Pontifax (Cayman) VI Limited Partnership. Pontifax VI G.P. L.P. is the general partner of each of Pontifax (Israel) VI Limited Partnership and Pontifax (Cayman) VI Limited Partnership. Pontifax Management 4 G.P. (2015) Ltd. is the general partner of Pontifax VI G.P. L.P.
+
+2. Based on 22,442,989 shares of Common Stock outstanding as of September 10, 2025, as provided for in LB Pharmaceuticals Inc.'s prospectus filed with the Securities and Exchange Commission ("SEC") on September 12, 2025.</commentContent>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonNoCIK>Y</reportingPersonNoCIK>
+        <reportingPersonName>Pontifax VI G.P. L.P.</reportingPersonName>
+        <memberOfGroup>b</memberOfGroup>
+        <fundType>AF</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>L3</citizenshipOrOrganization>
+        <soleVotingPower>0.00</soleVotingPower>
+        <sharedVotingPower>1411681.00</sharedVotingPower>
+        <soleDispositivePower>0.00</soleDispositivePower>
+        <sharedDispositivePower>1411681.00</sharedDispositivePower>
+        <aggregateAmountOwned>1411681.00</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>6.3</percentOfClass>
+        <typeOfReportingPerson>PN</typeOfReportingPerson>
+        <commentContent>1. Includes (i) 898,201 Ordinary Shares held by Pontifax (Israel) VI Limited Partnership and (ii) 513,480 Ordinary Shares held by Pontifax (Cayman) VI Limited Partnership. Pontifax VI G.P. L.P. is the general partner of each of Pontifax (Israel) VI Limited Partnership and Pontifax (Cayman) VI Limited Partnership.
+
+2. Based on 22,442,989 shares of Common Stock outstanding as of September 10, 2025, as provided for in LB Pharmaceuticals Inc.'s prospectus filed with the SEC on September 12, 2025.</commentContent>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonNoCIK>Y</reportingPersonNoCIK>
+        <reportingPersonName>Ran Nussbaum</reportingPersonName>
+        <memberOfGroup>b</memberOfGroup>
+        <fundType>AF</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>L3</citizenshipOrOrganization>
+        <soleVotingPower>0.00</soleVotingPower>
+        <sharedVotingPower>1411681.00</sharedVotingPower>
+        <soleDispositivePower>0.00</soleDispositivePower>
+        <sharedDispositivePower>1411681.00</sharedDispositivePower>
+        <aggregateAmountOwned>1411681.00</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>6.3</percentOfClass>
+        <typeOfReportingPerson>IN</typeOfReportingPerson>
+        <commentContent>1. Includes (i) 898,201 Ordinary Shares held by Pontifax (Israel) VI Limited Partnership and (ii) 513,480 Ordinary Shares held by Pontifax (Cayman) VI Limited Partnership. Pontifax VI G.P. L.P. is the general partner of each of Pontifax (Israel) VI Limited Partnership and Pontifax (Cayman) VI Limited Partnership. Pontifax Management 4 G.P. (2015) Ltd. is the general partner of Pontifax VI G.P. L.P. Tomer Kariv and Ran Nussbaum are the Managing Partners of Pontifax Management 4 G.P. (2015) Ltd. and, as a result, may be deemed to share voting and investment power with respect to the shares held by each of the Pontifax entities listed above.
+
+2. Based on 22,442,989 shares of Common Stock outstanding as of September 10, 2025, as provided for in LB Pharmaceuticals Inc.'s prospectus filed with the SEC on September 12, 2025.</commentContent>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonNoCIK>Y</reportingPersonNoCIK>
+        <reportingPersonName>Tomer Kariv</reportingPersonName>
+        <memberOfGroup>b</memberOfGroup>
+        <fundType>AF</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>L3</citizenshipOrOrganization>
+        <soleVotingPower>0.00</soleVotingPower>
+        <sharedVotingPower>1411681.00</sharedVotingPower>
+        <soleDispositivePower>0.00</soleDispositivePower>
+        <sharedDispositivePower>1411681.00</sharedDispositivePower>
+        <aggregateAmountOwned>1411681.00</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>6.3</percentOfClass>
+        <typeOfReportingPerson>IN</typeOfReportingPerson>
+        <commentContent>1. Includes (i) 898,201 Ordinary Shares held by Pontifax (Israel) VI Limited Partnership and (ii) 513,480 Ordinary Shares held by Pontifax (Cayman) VI Limited Partnership. Pontifax VI G.P. L.P. is the general partner of each of Pontifax (Israel) VI Limited Partnership and Pontifax (Cayman) VI Limited Partnership. Pontifax Management 4 G.P. (2015) Ltd. is the general partner of Pontifax VI G.P. L.P. Tomer Kariv and Ran Nussbaum, are the Managing Partners of Pontifax Management 4 G.P. (2015) Ltd. and, as a result, may be deemed to share voting and investment power with respect to the shares held by each of the Pontifax entities listed above.
+
+2. Based on 22,442,989 shares of Common Stock outstanding as of September 10, 2025, as provided for in LB Pharmaceuticals Inc.'s prospectus filed with the SEC on September 12, 2025.</commentContent>
+      </reportingPersonInfo>
+    </reportingPersons>
+    <items1To7>
+      <item1>
+        <securityTitle>Common Stock, $0.0001 par value per share</securityTitle>
+        <issuerName>LB Pharmaceuticals Inc</issuerName>
+        <issuerPrincipalAddress>
+          <com:street1>One Pennsylvania Plaza,</com:street1>
+          <com:street2>Suite 1025</com:street2>
+          <com:city>New York</com:city>
+          <com:stateOrCountry>NY</com:stateOrCountry>
+          <com:zipCode>10119</com:zipCode>
+        </issuerPrincipalAddress>
+      </item1>
+      <item2>
+        <filingPersonName>Each of the following is hereinafter individually referred to as a "Reporting Person" and collectively as the "Reporting Persons". This statement is filed on behalf of:
+
+i. Pontifax Management 4 G.P. (2015) Ltd., an Israeli private company ("Pontifax Management");
+
+ii. Pontifax VI G.P. L.P., an Israeli limited partnership ("Pontifax VI G.P.");
+
+iii. Ran Nussbaum, an Israeli citizen; and
+
+iv. Tomer Kariv, an Israeli citizen.
+
+The Reporting Persons have entered into an agreement of joint filing, a copy of which is attached hereto as Exhibit 99.1.</filingPersonName>
+        <principalBusinessAddress>The business address of the Reporting Persons is c/o The Pontifax Group, 14 Shenkar Street, Herzliya, Israel.</principalBusinessAddress>
+        <principalJob>The principal business of Pontifax Management and Pontifax VI G.P. is serving as the investment manager of Pontifax (Cayman) VI Limited Partnership, a Cayman Islands limited partnership ("Pontifax (Cayman)") and  Pontifax (Israel) VI Limited Partnership, an Israeli limited partnership ("Pontifax (Israel)"), and other persons. The principal business of Messrs. Tomer Kariv and Ran Nussbaum is serving as the Managing Partners of Pontifax Management, the general partner of Pontifax VI G.P. L.P., which, in turn, is the general partner of both Pontifax (Israel) and Pontifax (Cayman).</principalJob>
+        <hasBeenConvicted>During the last five years, none of the Reporting Persons has been convicted in a criminal proceeding (excluding traffic violations or similar misdemeanors).</hasBeenConvicted>
+        <convictionDescription>During the last five years, none of the Reporting Persons has been a party to a civil proceeding of a judicial or administrative body of competent jurisdiction and, as a result of such proceeding, was or is subject to a judgment, decree or final order enjoining future violations of, or prohibiting or mandating activities subject to, federal or state securities laws or finding any violation with respect to such laws.</convictionDescription>
+        <citizenship>See Item 2(a) above.</citizenship>
+      </item2>
+      <item3>
+        <fundsSource>Pontifax (Cayman) and Pontifax (Israel) previously paid an aggregate of $15,000,000 to purchase Series C Preferred Stock of the Issuer. Upon the consummation of the Issuer's initial public offering ("IPO") that closed on September 12, 2025, these shares of preferred stock converted into 411,681 shares of Common Stock, of which 261,938 shares of Common Stock are held by Pontifax (Israel) and 149,743 shares of Common Stock are held by Pontifax (Cayman).
+
+On September 12, 2025, each of Pontifax (Cayman) and Pontifax (Israel) purchased an additional 363,737 and 626,263 shares of Common Stock, respectively, in the IPO at a price of $15.00 per share.
+
+The source of funds for the purchase of the Issuer securities reported herein by both Pontifax (Cayman) and Pontifax (Israel) was from working capital.</fundsSource>
+      </item3>
+      <item4>
+        <transactionPurpose>The Reporting Persons acquired the securities reported herein for investment purposes, subject to the following:
+
+ The Reporting Persons intend to review on a continuing basis the investments in the Issuer by the Reporting Persons. The Reporting Persons may engage in discussions with management, the board of directors of the Issuer (the "Board"), other shareholders of the Issuer and other relevant parties concerning the Reporting Persons' investment in the Issuer's securities. Depending on various factors, including, without limitation, the price and availability of the Issuer's securities, subsequent developments affecting the Issuer, the Issuer's business and the Issuer's prospects, other investment and business opportunities available to such Reporting Persons, general industry and economic conditions, the securities markets in general, tax considerations and other factors deemed relevant by such Reporting Persons, the Reporting Persons may seek to sell or otherwise dispose some or all of the Issuer's securities or any derivatives thereof (which may include distributing some or all of such securities to such Reporting Person's respective partners or beneficiaries, as applicable) from time to time, and/or may seek to acquire additional securities of the Issuer or any derivatives thereof (which may include rights or securities exercisable or convertible into securities of the Issuer) from time to time, in each case, in open market or private transactions, block sales or otherwise.
+
+Ran Nussbaum, a Managing Director at Pontifax Management or one of its affiliates, serves as a member of the Board and, in such capacity, may have influence over the corporate activities of the Issuer, including activities which may relate to items described in subparagraphs (a) through (j) of Item 4 of Schedule 13D.
+
+Except as described in this Schedule 13D, the Reporting Person does not have any present plans or proposals that relate to or would result in any of the actions described in subparagraphs (a) through (j) of Item 4 of Schedule 13D, although, the Reporting Person, at any time and from time to time, may review, reconsider and change their position and/or purpose and/or develop such plans.</transactionPurpose>
+      </item4>
+      <item5>
+        <percentageOfClassSecurities>The information set forth in the cover pages of this Schedule 13D is hereby incorporated by reference into this Item 5.
+
+Calculation of the percentage of shares of Common Stock beneficially owned by each Reporting Person is based on 22,442,989 shares of Common Stock outstanding following the Issuer's IPO based on information set forth in the Issuer's prospectus filed with the SEC on September 12, 2025.
+
+The aggregate number and percentage of Common Shares beneficially owned by each Reporting Person and, for each Reporting Person, the number of shares as to which there is sole power to vote or to direct the vote, shared power to vote or to direct the vote, sole power to dispose or to direct the disposition, or shared power to dispose or to direct the disposition are set forth on rows 7 through 11 and row 13 of the cover pages of this Schedule 13D and are incorporated herein by reference.
+
+Pontifax (Israel) and Pontifax (Cayman) directly hold 898,201 and 513,480 shares of the Common Stock, respectively. The Managing Partners of Pontifax Management, the general partner of Pontifax VI G.P. L.P., which, in turn, is the general partner of both Pontifax (Israel) and Pontifax (Cayman), are Messrs. Tomer Kariv and Ran Nussbaum.</percentageOfClassSecurities>
+        <numberOfShares>See Item 5(a) above.</numberOfShares>
+        <transactionDesc>Except as set forth in this Schedule 13D, none of the Reporting Persons has effected any transaction in Common Stock in the past 60 days.</transactionDesc>
+        <listOfShareholders>To the best knowledge of the Reporting Persons, no one other than the Reporting Persons, or the partners, members, affiliates or shareholders of the Reporting Persons, has the right to receive or the power to direct the receipt of dividends from, or the proceeds from the sale of, the Common Stock reported herein as beneficially owned by the Reporting Persons.</listOfShareholders>
+        <date5PercentOwnership>Not applicable.</date5PercentOwnership>
+      </item5>
+      <item6>
+        <contractDescription>Except for the matters described herein, the Reporting Persons have no contract, arrangement, understanding or relationship (legal or otherwise) among the Reporting Persons or between the Reporting Persons and any other person with respect to the securities of the Issuer.</contractDescription>
+      </item6>
+      <item7>
+        <filedExhibits>Item 7 of Schedule 13D is hereby amended and supplemented as follows:
+
+Exhibit No.      Description
+99.1 Joint Filing Agreement by and among the Reporting Persons</filedExhibits>
+      </item7>
+    </items1To7>
+    <signatureInfo>
+      <signaturePerson>
+        <signatureReportingPerson>Pontifax Management 4 G.P. (2015) Ltd.</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Ran Nussbaum</signature>
+          <title>Ran Nussbaum Managing Partner</title>
+          <date>09/25/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Pontifax VI G.P. L.P.</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Ran Nussmabum</signature>
+          <title>Ran Nussbaum Managing Partner</title>
+          <date>09/25/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Ran Nussbaum</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Ran Nussbaum</signature>
+          <title>Ran Nussbaum</title>
+          <date>09/25/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Tomer Kariv</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Tomer Kariv</signature>
+          <title>Tomer Kariv</title>
+          <date>09/25/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+    </signatureInfo>
+  </formData>
+
+</edgarSubmission>

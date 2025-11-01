@@ -95,29 +95,50 @@ class FilingsViewerTab(QWidget):
         self.setLayout(self.layout)
         self.reload_filings()
 
-        # Filter bar
+        # ------------------------
+        # Filter bar (only label dropdown)
+        # ------------------------
         filter_layout = QHBoxLayout()
         filter_label = QLabel("<b>Filter by label:</b>")
         filter_label.setFont(QFont("Arial", 10))
+
         self.label_dropdown = QComboBox()
         self.label_dropdown.addItem("All")
         self.label_dropdown.addItems(self.labels)
         self.label_dropdown.currentTextChanged.connect(self.update_list)
+        self.label_dropdown.setSizeAdjustPolicy(QComboBox.SizeAdjustPolicy.AdjustToContents)
+
         filter_layout.addWidget(filter_label)
         filter_layout.addWidget(self.label_dropdown)
-        filter_layout.addStretch()
+        filter_layout.addStretch(1)  # spacer to keep it left-aligned
         self.layout.addLayout(filter_layout)
 
-        # Splitter
+        # ------------------------
+        # Splitter: list + details
+        # ------------------------
         self.splitter = QSplitter(Qt.Orientation.Horizontal)
-        # List
+
+        # Left: filings list
         self.list_widget = QListWidget()
         self.list_widget.itemSelectionChanged.connect(self.show_details)
         self.splitter.addWidget(self.list_widget)
-        # Details
+
+        # Right: details panel
         self.details_widget = QWidget()
         self.details_layout = QVBoxLayout()
         self.details_widget.setLayout(self.details_layout)
+
+        # --- Issuer & Reporting Persons ---
+        self.issuer_label = QLabel()
+        self.issuer_label.setFont(QFont("Arial", 11, QFont.Weight.Bold))
+        self.reporting_label = QLabel()
+        self.reporting_label.setFont(QFont("Arial", 10))
+        self.reporting_label.setWordWrap(True)
+
+        self.details_layout.addWidget(self.issuer_label)
+        self.details_layout.addWidget(self.reporting_label)
+
+        # --- Detail labels ---
         self.date_label = QLabel()
         self.form_label = QLabel()
         self.cik_label = QLabel()
@@ -125,16 +146,23 @@ class FilingsViewerTab(QWidget):
         for lbl in [self.date_label, self.form_label, self.cik_label, self.share_label]:
             lbl.setFont(QFont("Arial", 10))
             self.details_layout.addWidget(lbl)
+
+        # --- Summary box ---
+        self.details_layout.addWidget(QLabel("<b>Summary:</b>"))
         self.summary_box = QTextEdit()
         self.summary_box.setReadOnly(True)
         self.summary_box.setFont(QFont("Consolas", 11))
-        self.details_layout.addWidget(QLabel("<b>Summary:</b>"))
         self.details_layout.addWidget(self.summary_box, stretch=1)
+
         self.splitter.addWidget(self.details_widget)
         self.splitter.setSizes([300, 700])
         self.layout.addWidget(self.splitter)
+
         self.update_list()
 
+    # ------------------------
+    # Reload filings & labels
+    # ------------------------
     def reload_filings(self):
         global filings
         filings = load_filings()
@@ -146,6 +174,9 @@ class FilingsViewerTab(QWidget):
         if hasattr(self, 'list_widget'):
             self.update_list()
 
+    # ------------------------
+    # Update list based on filter
+    # ------------------------
     def update_list(self):
         self.list_widget.clear()
         selected_label = self.label_dropdown.currentText()
@@ -154,6 +185,9 @@ class FilingsViewerTab(QWidget):
                 display_name = f"{f['filename']} ({f.get('date','')})"
                 self.list_widget.addItem(display_name)
 
+    # ------------------------
+    # Show selected filing details
+    # ------------------------
     def show_details(self):
         self.summary_box.clear()
         selected_items = self.list_widget.selectedItems()
@@ -161,13 +195,25 @@ class FilingsViewerTab(QWidget):
             filename = selected_items[0].text().split(" (")[0]
             for f in filings:
                 if f["filename"] == filename:
+                    # --- Update issuer & reporting ---
+                    issuer_name = f.get("issuer") or "—"
+                    reporting_persons = f.get("reporting_persons") or []
+                    self.issuer_label.setText(f"Issuer: {issuer_name}")
+                    self.reporting_label.setText("Reporting: " + ", ".join(reporting_persons))
+
+                    # --- Update detail labels ---
                     self.date_label.setText(f"<b>Date:</b> {f.get('date','')}")
                     self.form_label.setText(f"<b>Form:</b> {f.get('form','')}")
                     self.cik_label.setText(f"<b>CIK:</b> {f.get('cik','')}")
                     share_pct = f.get("share %")
-                    self.share_label.setText(f"<b>Share %:</b> {share_pct:.2%}" if share_pct else "")
+                    self.share_label.setText(
+                        f"<b>Share %:</b> {share_pct:.2%}" if share_pct else ""
+                    )
+
+                    # --- Update summary ---
                     self.summary_box.setText(f.get("summary", "No summary available."))
                     break
+
 
 # ----------------------------
 # Control Panel Tab

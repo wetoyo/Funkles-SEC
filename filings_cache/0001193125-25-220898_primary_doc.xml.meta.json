@@ -5,9 +5,15 @@
     "form": "SCHEDULE 13D",
     "file_type": "SCHEDULE 13D",
     "original_filename": "primary_doc.xml",
-    "accession": "0001193125-25-220898",
+    "issuer": "CASI Pharmaceuticals, Inc.",
+    "reporting_persons": [
+        "Panacea Venture Healthcare Fund II, L.P.",
+        "Panacea Venture Healthcare Fund II GP Company, Ltd.",
+        "Panacea Innovation Limited",
+        "James Huang"
+    ],
     "cik": "0001962738",
     "label": "Signal activist investment or strategic involvement",
-    "summary": "Panacea Venture Healthcare Fund II, L.P., Panacea Venture Healthcare Fund II GP Company, Ltd., Panacea Innovation Limited, and James Huang jointly filed a Schedule 13D, reporting beneficial ownership in CASI Pharmaceuticals, Inc. As of September 26, 2025, James Huang beneficially owns 3,661,571 Ordinary Shares, representing 19.9% of the class, which includes shares held by Panacea Venture entities and personal options. On September 26, 2025, Panacea Venture Healthcare Fund II, L.P. purchased 1,500,000 Ordinary Shares from the Issuer, and James Huang is set to be appointed to the Issuer's Board of Directors effective October 1, 2025. The Reporting Persons acquired the securities for investment purposes and may explore various corporate actions.",
+    "summary": "Panacea Venture Healthcare Fund II, L.P., and affiliated entities including James Huang, collectively reported beneficial ownership of 3,661,571 Ordinary Shares, representing 19.9% of CASI Pharmaceuticals, Inc. The filing discloses Panacea Venture Healthcare Fund II, L.P.'s purchase of 1,500,000 shares from the Issuer on September 26, 2025, contributing to their aggregate holdings which also include exercisable options held by James Huang. Furthermore, James Huang is set to join CASI Pharmaceuticals' Board of Directors on October 1, 2025, with the group indicating an investment purpose and potential future engagement in corporate actions.",
     "share %": 0.2363435117750877
 }

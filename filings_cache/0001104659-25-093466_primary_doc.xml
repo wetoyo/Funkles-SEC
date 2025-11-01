@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?><edgarSubmission xmlns="http://www.sec.gov/edgar/schedule13D" xmlns:com="http://www.sec.gov/edgar/common">
+  <headerData>
+    <submissionType>SCHEDULE 13D</submissionType>
+    <filerInfo>
+      <filer>
+        <filerCredentials>
+          <!-- Field: Pseudo-Tag; ID: Name; Data: Morehead Daniel Wayne -->
+          <cik>0002079712</cik>
+          <ccc>XXXXXXXX</ccc>
+        </filerCredentials>
+      </filer>
+      <liveTestFlag>LIVE</liveTestFlag>
+
+
+
+    </filerInfo>
+  </headerData>
+  <formData>
+    <coverPageHeader>
+      <securitiesClassTitle>Class A Common Stock, $0.001 par value per share</securitiesClassTitle>
+      <dateOfEvent>09/18/2025</dateOfEvent>
+      <previouslyFiledFlag>false</previouslyFiledFlag>
+      <issuerInfo>
+        <issuerCIK>0001610853</issuerCIK>
+        <issuerCUSIP>42328V876</issuerCUSIP>
+        <issuerName>HELIUS MEDICAL TECHNOLOGIES, INC.</issuerName>
+        <address>
+          <com:street1>642 Newtown Yardley Road</com:street1>
+          <com:street2>Suite 100</com:street2>
+          <com:city>Newtown</com:city>
+          <com:stateOrCountry>PA</com:stateOrCountry>
+          <com:zipCode>18940</com:zipCode>
+        </address>
+      </issuerInfo>
+      <authorizedPersons>
+        <notificationInfo>
+          <personName>Daniel W. Morehead</personName>
+          <personPhoneNum>650-854-7000</personPhoneNum>
+          <personAddress>
+            <com:street1>c/o Pantera Capital Management LP</com:street1>
+            <com:street2>600 Montgomery St, 45th Floor</com:street2>
+            <com:city>San Francisco</com:city>
+            <com:stateOrCountry>CA</com:stateOrCountry>
+            <com:zipCode>94111</com:zipCode>
+          </personAddress>
+        </notificationInfo>
+      </authorizedPersons>
+    </coverPageHeader>
+    <reportingPersons>
+      <reportingPersonInfo>
+        <reportingPersonCIK>0002079712</reportingPersonCIK>
+        <reportingPersonNoCIK>N</reportingPersonNoCIK>
+        <reportingPersonName>Morehead Daniel Wayne</reportingPersonName>
+        <fundType>AF</fundType>
+        <fundType>PF</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>X1</citizenshipOrOrganization>
+        <soleVotingPower>10000.00</soleVotingPower>
+        <sharedVotingPower>3887319.00</sharedVotingPower>
+        <soleDispositivePower>10000.00</soleDispositivePower>
+        <sharedDispositivePower>3887319.00</sharedDispositivePower>
+        <aggregateAmountOwned>3897319.00</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>9.67</percentOfClass>
+        <typeOfReportingPerson>IN</typeOfReportingPerson>
+        <typeOfReportingPerson>HC</typeOfReportingPerson>
+        <commentContent>Based upon 40,295,612 shares of Common Stock issued and outstanding as of September 24, 2025</commentContent>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonNoCIK>Y</reportingPersonNoCIK>
+        <reportingPersonName>Pantera Capital Partners LP</reportingPersonName>
+        <fundType>AF</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>DE</citizenshipOrOrganization>
+        <soleVotingPower>3887319.00</soleVotingPower>
+        <sharedVotingPower>0.00</sharedVotingPower>
+        <soleDispositivePower>3887319.00</soleDispositivePower>
+        <sharedDispositivePower>0.00</sharedDispositivePower>
+        <aggregateAmountOwned>3887319.00</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>9.65</percentOfClass>
+        <typeOfReportingPerson>IA</typeOfReportingPerson>
+        <typeOfReportingPerson>HC</typeOfReportingPerson>
+        <commentContent>Based upon 40,295,612 shares of Common Stock issued and outstanding as of September 24, 2025</commentContent>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonNoCIK>Y</reportingPersonNoCIK>
+        <reportingPersonName>Pantera Blockchain Fund LP</reportingPersonName>
+        <fundType>PF</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>DE</citizenshipOrOrganization>
+        <soleVotingPower>0.00</soleVotingPower>
+        <sharedVotingPower>3160680.00</sharedVotingPower>
+        <soleDispositivePower>0.00</soleDispositivePower>
+        <sharedDispositivePower>3160680.00</sharedDispositivePower>
+        <aggregateAmountOwned>3160680.00</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>7.84</percentOfClass>
+        <typeOfReportingPerson>IC</typeOfReportingPerson>
+        <commentContent>Based upon 40,295,612 shares of Common Stock issued and outstanding as of September 24, 2025</commentContent>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonNoCIK>Y</reportingPersonNoCIK>
+        <reportingPersonName>Pantera DAT Opportunities Master Fund SP</reportingPersonName>
+        <fundType>PF</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>E9</citizenshipOrOrganization>
+        <soleVotingPower>0.00</soleVotingPower>
+        <sharedVotingPower>581311.00</sharedVotingPower>
+        <soleDispositivePower>0.00</soleDispositivePower>
+        <sharedDispositivePower>581311.00</sharedDispositivePower>
+        <aggregateAmountOwned>581311.00</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>1.44</percentOfClass>
+        <typeOfReportingPerson>IC</typeOfReportingPerson>
+        <commentContent>Based upon 40,295,612 shares of Common Stock issued and outstanding as of September 24,   2025</commentContent>
+      </reportingPersonInfo>
+      <reportingPersonInfo>
+        <reportingPersonNoCIK>Y</reportingPersonNoCIK>
+        <reportingPersonName>Pantera Liquid Token Fund LP</reportingPersonName>
+        <fundType>PF</fundType>
+        <legalProceedings>N</legalProceedings>
+        <citizenshipOrOrganization>DE</citizenshipOrOrganization>
+        <soleVotingPower>0.00</soleVotingPower>
+        <sharedVotingPower>145328.00</sharedVotingPower>
+        <soleDispositivePower>0.00</soleDispositivePower>
+        <sharedDispositivePower>145328.00</sharedDispositivePower>
+        <aggregateAmountOwned>145328.00</aggregateAmountOwned>
+        <isAggregateExcludeShares>N</isAggregateExcludeShares>
+        <percentOfClass>0.36</percentOfClass>
+        <typeOfReportingPerson>IC</typeOfReportingPerson>
+        <commentContent>Based upon 40,295,612 shares of Common Stock issued and outstanding as of September 24,   2025.</commentContent>
+      </reportingPersonInfo>
+    </reportingPersons>
+    <items1To7>
+      <item1>
+        <securityTitle>Class A Common Stock, $0.001 par value per share</securityTitle>
+        <issuerName>HELIUS MEDICAL TECHNOLOGIES, INC.</issuerName>
+        <issuerPrincipalAddress>
+          <com:street1>642 Newtown Yardley Road</com:street1>
+          <com:street2>Suite 100</com:street2>
+          <com:city>Newtown</com:city>
+          <com:stateOrCountry>PA</com:stateOrCountry>
+          <com:zipCode>18940</com:zipCode>
+        </issuerPrincipalAddress>
+      </item1>
+      <item2>
+        <filingPersonName>This Schedule 13D is filed by Pantera Capital Partners LP ("Pantera"), Pantera Blockchain Fund LP   ("Blockchain Fund"), Pantera DAT Opportunities Master Fund SP ("DAT Opportunities Fund"),   Pantera Liquid Token Fund LP ("Liquid Token Fund" and, together with Blockchain Fund and DAT   Opportunities Fund, the "Funds"), and Daniel W. Morehead, Founder and Managing Partner of   Pantera. The Funds are under management by Pantera. Pantera serves as investment advisor to   the Funds and has control and discretion over the shares held by the Funds.
+
+The term "Reporting Persons" hereinafter refers to Pantera, Blockchain Fund, DAT Opportunities
+Fund, Liquid Token Fund, and Mr. Morehead, collectively.
+
+Each of the Reporting Persons is party to that certain Joint Filing Agreement, as further described
+in Item 6.</filingPersonName>
+        <principalBusinessAddress>The principal business office of the Reporting Persons is c/o Pantera Capital Management LP at   600 Montgomery St, 45th Floor, San Francisco, CA, 94111.</principalBusinessAddress>
+        <principalJob>The principal occupation of Mr. Morehead is to serve as the Founder and Managing Partner of Pantera.
+
+The remaining Reporting Persons are principally engaged in the business of investment
+management or making, purchasing, selling and holding investments.</principalJob>
+        <hasBeenConvicted>During the last five years, none of the Reporting Persons has been convicted in a criminal   proceeding (excluding traffic violations or similar misdemeanors).</hasBeenConvicted>
+        <convictionDescription>During the last five years, none of the Reporting Persons was a party to a civil proceeding of a   judicial administrative body of competent jurisdiction or was subject to a judgment, decree or final   order enjoining future violations of, or prohibiting or mandating activities subject to, federal or state   securities laws or finding any violation with respect to such laws.</convictionDescription>
+        <citizenship>Mr. Morehead is a citizen of the United States. Pantera is organized under the laws of Delaware.   Blockchain Fund and Liquid Token Fund are organized under the laws of Delaware. DAT   Opportunities Fund is organized under the laws of the Cayman Islands.</citizenship>
+      </item2>
+      <item3>
+        <fundsSource>The restricted shares of Class A Common Stock, par value $0.001 per share, of the Issuer (the   "Common Stock") reported as being beneficially owned by the Reporting Persons were acquired   pursuant to those certain Subscription Agreement, dated as of September 15, 2025 (the   "Subscription Agreement"), by and between the Issuer and each of the Funds (the "Transaction").   The transactions contemplated by the Subscription Agreement consummated on September 18,   2025 (the "Closing").
+
+Pursuant to the terms of the Subscription Agreement, at the Closing, the Funds acquired an
+aggregate of 3,887,319 shares of Common Stock and a pre-funded warrant to purchase 13,552,006
+shares of Common Stock, for an aggregate purchase price of approximately $119,986,443.32 (the
+"Acquired Securities").
+
+The source of funds required for the acquisition of the Acquired Securities by the Funds is the
+personal funds available to the Funds.
+
+The foregoing description of the Subscription Agreement does not purport to be complete and is
+qualified in its entirety by the full text of the Subscription Agreement that is attached hereto as Exhibit
+1 and is incorporated by reference herein.
+
+Mr. Morehead also purchased on the open market, in his individual capacity, 10,000 shares of
+Common Stock on September 23, 2025, for an aggregate purchase price of approximately $166,218
+(the "Morehead Securities" and such purchase, the "Morehead Purchase").
+
+The source of funds required for the acquisition of the Morehead Securities by the Mr. Morehead is
+the personal funds available to Mr. Morehead.</fundsSource>
+      </item3>
+      <item4>
+        <transactionPurpose>The information set forth or incorporated in Item 3 and Item 6 is hereby incorporated by reference
+in its entirety into this Item 4.
+
+The Funds acquired the Acquired Shares as part of the Transaction described in Item 3 above. Mr.
+Morehead acquired the Morehead Securities in his individual capacity as part of the Morehead
+Purchase described in Item 3 above.
+
+The aggregate gross proceeds from the Transaction described in Item 3 were over $500 million.
+The net proceeds from the Transaction are intended to be used by the Issuer to purchase SOL, the
+native cryptocurrency of the Solana blockchain, and for working capital and general corporate
+purposes.
+
+Other than as described in this Item 4, none of the Reporting Persons presently has any additional
+plans or proposals that relate to or that would result in any of the transactions or other matters
+specified in clauses (a) through (j) of Item 4 of this Schedule 13D, but depending on the factors
+discussed herein, the Reporting Persons may change their purpose or formulate different plans or
+proposals with respect their investment in the Issuer at any time.</transactionPurpose>
+      </item4>
+      <item5>
+        <percentageOfClassSecurities>On the date of this Schedule 13D, Pantera, as investment manager of the Funds, and Mr. Morehead,
+as the Founder, Managing Partner and control person of Pantera, may be deemed to indirectly
+beneficially own, and have sole voting and dispositive power over, an aggregate of 3,897,319 shares
+of Common Stock, which is approximately 9.67% of the Common Stock issued and outstanding,
+comprising of:
+
+(1) 3,160,680 shares of Common Stock directly held by BlockChain Fund (or 7.84% of the Common
+Stock issued and outstanding);
+
+(2) 581,311 shares of Common Stock directly held by DAT Opportunities Fund (or 1.44% of the
+Common Stock issued and outstanding);
+
+(3) 145,328 shares of Common Stock directly held by Liquid Token Fund (or 0.36% of the Common
+Stock issued and outstanding); and
+
+(4) 10,000 shares of Common Stock directly held by Mr. Morehead (or 0.02% of the Common Stock
+issued and outstanding).
+
+The calculation of the percentage of Common Shares beneficially owned by Mr. Morehead and
+Pantera are based on the 40,295,612 Common Shares issued and outstanding as of September
+24, 2025, as confirmed by the Issuer's transfer agent on such date.</percentageOfClassSecurities>
+        <numberOfShares>The information contained on the cover pages to this Schedule 13D is incorporated by reference   into this Item 5(b).</numberOfShares>
+        <transactionDesc>Except the information set forth in this Schedule 13D, no transactions in any of the Common Stock   have been effected by the Reporting Persons during the past sixty days.</transactionDesc>
+        <listOfShareholders>None.</listOfShareholders>
+        <date5PercentOwnership>Not applicable.</date5PercentOwnership>
+      </item5>
+      <item6>
+        <contractDescription>The information set forth or incorporated in Item 3, Item 4 and Item 5 is hereby incorporated by
+reference in its entirety into this Item 6.
+
+The foregoing description of the Subscription Agreement does not purport to be complete and is
+qualified in its entirety by the full text of the Subscription Agreement that is attached hereto as Exhibit
+1 and is incorporated by reference herein.</contractDescription>
+      </item6>
+      <item7>
+        <filedExhibits>1 Form of Subscription Agreement, dated as of September 15, 2025, by and among Helius Medical
+Technologies, Inc. and certain investors party thereto (incorporated by reference to Exhibit 10.1 to
+the Issuer's Current Report on Form 8-K, filed with the SEC on September 15, 2025).
+
+2. Form of Pre-Funded Warrant (incorporated by reference to Exhibit 4.1 to the Issuer's Current
+Report on Form 8-K, filed with the SEC on September 15, 2025).
+
+3. Joint Filing Agreement, dated September 25, 2025, by and among the Reporting Persons.*
+
+ * Filed herewith.</filedExhibits>
+      </item7>
+    </items1To7>
+    <signatureInfo>
+      <signaturePerson>
+        <signatureReportingPerson>Morehead Daniel Wayne</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Daniel W. Morehead</signature>
+          <title>Daniel W. Morehead</title>
+          <date>09/25/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Pantera Capital Partners LP</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Matthew Gorham</signature>
+          <title>Matthew Gorham, Authorized Signatory</title>
+          <date>09/25/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Pantera Blockchain Fund LP</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Matthew Gorham</signature>
+          <title>Matthew Gorham, Authorized Signatory</title>
+          <date>09/25/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Pantera DAT Opportunities Master Fund SP</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Matthew Gorham</signature>
+          <title>Matthew Gorham, Authorized Signatory</title>
+          <date>09/25/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+      <signaturePerson>
+        <signatureReportingPerson>Pantera Liquid Token Fund LP</signatureReportingPerson>
+        <signatureDetails>
+          <signature>/s/ Matthew Gorham</signature>
+          <title>Matthew Gorham, Authorized Signatory</title>
+          <date>09/25/2025</date>
+        </signatureDetails>
+      </signaturePerson>
+    </signatureInfo>
+  </formData>
+
+</edgarSubmission>
